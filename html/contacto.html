@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Musicando</title>
+    <link rel="icon" href="../img/favicon.png" type="image/png" sizes="96x96">
+</head>
+
+<body>
+    <h1>La web de las artes</h1>
+    <h2>SECCIÓN: Contáctanos</h2>
+    <div clas="menu">
+        <ul>
+            <li>
+                <a href="../index.html">Inicio</a>
+            </li>
+            <li>
+                <a href="musica.html">Música</a>
+            </li>
+            <li>
+                <a href="cine.html">Cine</a>
+            </li>
+            <li>
+                <a href="generosLiterarios.html">Géneros Literarios</a>
+            </li>
+            <li>
+                <a href="multimedia.html">multimedia</a>
+            </li>
+            <li>
+                <a href="#">Contáctanos</a>
+            </li>
+        </ul>
+    </div>
+    <hr />
+    <div>
+        <form name="datosPersonales" method="post" action="" enctype="multipart/form-data">
+            <fieldset>
+                <legend>Datos Personales</legend>
+                <div>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" name="nombre" id="nombre" autocomplete="off" placeholder="Introduce tu nombre..."
+                        required />
+                    *
+                </div>
+                <div>
+                    <label for="apellidos">Apellidos:</label>
+                    <input type="text" name="apellidos" id="apellidos" autocomplete="off"
+                        placeholder="Introduce tus apellidos..." required />
+                    *
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" autocomplete="off" placeholder="usuario@email.com"
+                        required />
+                    *
+                </div>
+                <div>
+                    <label for="fechaNac">Fecha de Nacimiento:</label>
+                    <input type="date" name="fechaNac" id="fechaNac" autocomplete="off" />
+                </div>
+                <div>
+                    <label for="edad">Edad:</label>
+                    <input type="number" name="edad" id="edad" min="0" max="100" autocomplete="off" />
+                </div>
+                <div>
+                    <label for="sexo">Sexo:</label>
+                    <input type="radio" name="sexo" id="sexo" value="H" checked />Hombre
+                    <input type="radio" name="sexo" id="sexo" value="M" />Mujer
+                </div>
+                <div>
+                    <label for="pais">País:</label>
+                    <select id="pais" name="pais">
+                        <option value="" selected="selected">-Selecciona-</option>
+                        <option value="españa">España</option>
+                        <option value="francia">Francia</option>
+                        <option value="portugal">Portugal</option>
+                        <option value="italia">Italia</option>
+                    </select>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Otros Datos</legend>
+                <div>
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea rows="10" cols="40" spellcheck="true" id="mensaje" name="mensaje"></textarea>
+                </div>
+                <div>
+                    <label for="foto">Adjunta una foto...</label>
+                    <input type="file" id="foto" name="foto" accept=".jpg, .png" />
+                </div>
+            </fieldset>
+            <label>
+                <input type="checkbox" name="condiciones" value="acepta" />
+                He leído las condiciones...
+            </label>
+            <div>
+                <button type="reset">Limpiar</button>
+                <button type="submit">Enviar</button>
+            </div>
+        </form>
+    </div>
+    <div>
+        <h2>Centro de referencia</h2>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3507.7792920296224!2d-16.28582578936719!3d28.45606889197185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc41cceee5a8035f%3A0xab9f2a74d9e68b51!2sCIFP%20C%C3%A9sar%20Manrique!5e0!3m2!1ses!2ses!4v1708117356337!5m2!1ses!2ses"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <hr />
+    <a href="#">Inicio</a>
+</body>
+
+</html>
